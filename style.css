@@ -3,3 +3,25 @@
     padding: 0;
     box-sizing: border-box;
 }
+.calc-space{
+    background-color: rgb(62, 59, 59);
+    height: 500px;
+    width: 250px;
+}
+.calc-screen{
+    border: 2px solid black;
+    height: 100px;
+    width: 250px;
+    display: flex;
+    background-color: rgb(98, 98, 98);
+}
+.buttons{
+    /* display:grid; */
+}
+.btn{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(136, 136, 136);
+    margin: 5px;
+ 
+}
