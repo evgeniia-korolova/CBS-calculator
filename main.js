@@ -1,4 +1,4 @@
-let screen = document.getElementById("calc-screen");
+let screen = document.getElementById("calc__screen");
 let result;
 let operator;
 let reset = false;
