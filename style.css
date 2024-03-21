@@ -8,7 +8,7 @@
     height: 500px;
     width: 250px;
 }
-.calc-screen{
+#calc-screen{
     border: 2px solid black;
     height: 100px;
     width: 250px;

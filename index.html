@@ -8,31 +8,32 @@
 </head>
 <body>
     <div class="calc-space">
-        <div class="calc-screen">
-            123
+        <div id="calc-screen">
+            <!-- 123 -->
         </div>
         <div class="buttons">
-            <div class="btn open">(</div>
+            <!-- <div class="btn open" >(</div>
             <div class="btn close">)</div>
-            <div class="btn percent">%</div>
-            <div class="btn clean">AC</div>
-            <div class="btn divide">/</div>
-            <div class="btn multiply">X</div>
-            <div class="btn minus">-</div>
-            <div class="btn plus">+</div>
-            <div class="btn equal">=</div>
-            <div class="btn point">.</div>
-            <div class="btn one">1</div>
-            <div class="btn two">2</div>
-            <div class="btn three">3</div>
-            <div class="btn four">4</div>
-            <div class="btn five">5</div>
-            <div class="btn six">6</div>
-            <div class="btn seven">7</div>
-            <div class="btn eight">8</div>
-            <div class="btn nine">9</div>
-            <div class="btn zero">0</div>
+            <div class="btn percent">%</div> -->
+            <div class="btn clean" onclick="clearScreen()">AC</div>
+            <div class="btn divide" onclick="addOperator('/')">/</div>
+            <div class="btn multiply" onclick="addOperator('*')">X</div>
+            <div class="btn minus" onclick="addOperator('-')">-</div>
+            <div class="btn plus" onclick="addOperator('+')">+</div>
+            <div class="btn equal" onclick="calculate()">=</div>
+            <div class="btn point" onclick="addToScreen('.')">.</div>
+            <div class="btn one" onclick="addToScreen('1')">1</div>
+            <div class="btn two" onclick="addToScreen('2')">2</div>
+            <div class="btn three" onclick="addToScreen('3')">3</div>
+            <div class="btn four" onclick="addToScreen('4')">4</div>
+            <div class="btn five" onclick="addToScreen('5')">5</div>
+            <div class="btn six" onclick="addToScreen('6')">6</div>
+            <div class="btn seven" onclick="addToScreen('7')">7</div>
+            <div class="btn eight" onclick="addToScreen('8')">8</div>
+            <div class="btn nine" onclick="addToScreen('9')">9</div>
+            <div class="btn zero" onclick="addToScreen('0')">0</div>
         </div>
     </div>
+    <script src="./main.js"></script>
 </body>
 </html>
