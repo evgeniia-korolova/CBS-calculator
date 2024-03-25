@@ -46,7 +46,7 @@ body {
 .calc__space {
 	width: 300px;
 	margin: 0 auto;
-	margin-top: 100px;
+	margin-top: 60px;
 	background-color: var(--bg-main);
 	border-radius: 20px;
 	box-shadow: 4px 4px 4px #6d6c6c;
@@ -57,10 +57,9 @@ body {
 }
 
 #calc__screen {
-	/* border: 2px solid black; */
 	height: 70px;
 	padding: 10px;
-	/* width: 250px; */
+	font-size: 36px;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
@@ -88,23 +87,31 @@ body {
 	border-radius: 10px;
 	box-shadow: 2px 2px 2px #6d6c6c;
 	transition: all 0.3s;
+	user-select: none;
 }
 
 .btn:hover {
 	filter: brightness(130%);
+	box-shadow: 2px 2px 2px #f4dddd;
 }
 .btn:active {
 	filter: brightness(80%);
 }
 
-.inactive {
-	pointer-events: none;
-	filter: brightness(70%);
+.clear,
+.clear-last {
+	background: #555454;
 }
 
-.operator {
+.operator,
+.equal {
 	background: var(--accent-color);
 	box-shadow: 3px 2px 2px #831f1f;
+}
+
+.operator:hover,
+ .equal:hover {
+	box-shadow: 2px 2px 2px #c57b7b;
 }
 
 .equal {
